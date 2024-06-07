@@ -716,6 +716,10 @@ a{
         font-size: 8vw;
         margin-top: 4px;
     }
+    .project-discover-button .discover-button{
+        width: 36vw;
+        padding: 8px;
+    }
     /* ---------------------------------- */ 
     .services-main .services-box{
         height: 20vw;
@@ -794,5 +798,11 @@ a{
         display: none!important;
     }
     /* ---------------------------------- */
+    .contact-us .services-heading{
+        align-items: center;
+    }
+    .contact-us .services-heading h1{
+        font-size: 1.4rem;
+    }
 
 }
