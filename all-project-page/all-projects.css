@@ -1,0 +1,133 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.project-hero{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* justify-content: center; */
+    margin-top: 12rem;
+    padding: 0 4.6rem;
+}
+.project-hero div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.project-hero h1{
+    font-size: 17vw;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.o-ui-arrow{
+    stroke: #000;
+    margin-left: 3.6rem;
+}
+
+/* -------------------------- */
+
+.all-projects{
+    padding: 4rem;
+    /* border-top: 2px solid #ccc; */
+}
+.all-projects div{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+.all-projects .project-box img{
+    width: 44vw;
+    height: 26vw;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: all ease-in-out .3s;
+}
+.all-projects .project-box img:hover{
+    transform:scale(1.02);
+    /* filter: blur(1px); */
+    /* filter: grayscale(10); */
+    filter: contrast(120%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.all-projects .project-box {
+    display: flex;
+    flex-direction: column;
+}
+.all-projects .project-box h2{
+    font-size:2.6rem;
+    margin: 0 14px;
+}
+.all-projects .project-box p{
+    font-size: 1.2rem;
+    margin: 10px 14px;
+    text-transform: uppercase;
+}
+.all-projects a{
+    color: #000!important;
+}
+
+
+
+.contact-section{
+    width: 100%;
+    /* margin: 2vw 3vw; */
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    border-top: 2px solid #ccc;
+}
+.contact-heading{
+    display: flex;
+    flex-direction: column;
+    color: #2f2f2f;
+}
+.contact-section div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.contact-section div:nth-child(2) h1{ 
+    margin-left: 8vw;
+}
+.services-box p{
+    font-size: 1vw;
+}
+.contact-arrow-svg{
+    transform: rotate(-1deg);
+}
+.contact-section h1{
+    font-size: 10vw;
+}
+.contact-section h1 span{
+    margin-left: 14vw;
+}
+.contact-form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-form-left{
+    margin-right: 4vw;
+}
+.contact-form-right form input{
+    margin: .4em;
+    padding: 12px;
+    border-radius: 50px;
+    border: none;
+}
+.contact-form-right .message{
+    width: 100%;
+}
+
+

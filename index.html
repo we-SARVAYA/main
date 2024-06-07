@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css">
+    <script src="https://kit.fontawesome.com/b8ff691037.js" crossorigin="anonymous"></script>
+
+    <style>
+        .circle {
+           height: 20px;
+           width: 20px;
+           border-radius: 24px;
+           background-color: black;
+           position: fixed; 
+           top: 0;
+           left: 0;
+           pointer-events: none;
+           z-index: 99999999; /* so that it stays on top of all other elements */
+        }
+    </style>
+</head>
+<body>
+    <!-- ---- -->
+    <div class="main-cursor">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <!-- ---- -->
+    <div class="main">
+        <!-- ----------- -->
+        <div class="hero-container">
+
+            <nav class="navbar">
+                <h1 class="logo">Sarvaya</h1>
+                <input class="phone-nav" type="checkbox" id="active">
+                <label for="active" class="menu-btn phone-nav"><i class='bx bx-menu'></i></label>
+                <ul class="laptop-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Serices</a></li>
+                    <li class="navbar-contact"><a href="#">Get in touch <i tyle="transform: rotate(-45deg);" class='bx bx-right-arrow-alt'></i></a></li>
+                    <i class='bx bx-menu'></i>
+                </ul>
+                <div class="wrapper" >
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Get in touch</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+
+            <div class="hero-heading">
+
+                <div>
+                    <div>
+                        <h1>
+                            Investing early 
+                        </h1>
+                    </div>
+    
+                    <div>
+                        <h1>on the blockchain </h1>
+                    </div>
+    
+                    <div class="hero-text">
+                        <h1>
+                            project
+                        </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing  <br>
+                            elit. Ut voluptas laboriosam doloribus totam! Bla  <br>
+                            <button class="explore-button">Explore</button>
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="./images/weekday-young-man-writing-in-folder-1.gif" alt="">
+                </div>
+
+            </div>
+
+        </div>
+        <!-- ----------- -->
+        <div class="intro-container">
+            <h1>
+                "<span>Transform</span> Your Digital 
+                Presence with Expert
+                Solutions!
+            </h1>
+            <h1>
+                Elevate your <span>online</span> 
+                presence today!"
+            </h1>
+        </div>
+        <!-- ----------- -->
+        <div class="project-container">
+            <div class="project-heading flex-row">
+               <h1>Our Projects</h1>
+               <p>
+                   our clients are companies ,brands and <br>
+                   startups that keep the world going around. <br>
+                   and many more content here to be added 
+                </p>
+            </div>
+
+            <div class="project-filter">
+
+                <div class="buttons">
+                    <div class="project-filter-button">
+                        <a class="filter-button" onclick="toggleVisibility('Menu1');">All projects</a>
+                        <a class="filter-button" onclick="toggleVisibility('Menu2');">Web Development</a>
+                        <a class="filter-button" onclick="toggleVisibility('Menu3');">UI/UX</a>
+                        <a class="filter-button menu-4" onclick="toggleVisibility('Menu4');">Menu4</a>
+                    </div>
+                    <div class="project-discover-button">
+                        <a class="filter-button discover-button" onclick="toggleVisibility('Menu4');">
+                            discover More
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </a>
+                    </div>
+                </div>
+                  
+                <div id="Menu1" class=".flex-column .center-align">
+                    <div class="projects-section">
+                        <div class="project-box">
+                          <h2>Juspace.tect</h2>
+                          <i class='bx bx-right-arrow-alt' style="rotate: -45deg;"></i>
+                        </div>
+                        <div class="project-box">
+                          <h2>Juspace.tect</h2>
+                          <i class='bx bx-right-arrow-alt' style="rotate: -45deg;"></i>
+                        </div>
+                    </div>
+                  <div class="projects-section">
+                      <div class="project-box">
+                        <h2>Juspace.tect</h2>
+                        <i class='bx bx-right-arrow-alt' style="rotate: -45deg;"></i>
+                      </div>
+                      <div class="project-box">
+                        <h2>Juspace.tect</h2>
+                        <i class='bx bx-right-arrow-alt' style="rotate: -45deg;"></i>
+                      </div>
+                  </div>
+                </div>
+
+                <div id="Menu2" style="display: none;">
+                  I'm container two
+                </div>
+
+                <div id="Menu3" style="display: none;">
+                  I'm container three
+                </div>
+                <div id="Menu4" style="display: none;">
+                  I'm container four
+                </div>
+                
+            </div>
+        </div>
+        <!-- ----------- -->
+        <div class="services-container">
+            <div class="services-heading">
+                <h1>Our Services</h1>
+                <a class="discover-button" onclick="toggleVisibility('Menu4');">
+                    Discover More
+                    <i class='bx bx-right-arrow-alt'></i>
+                </a>
+            </div>
+            <div class="services-main">
+                <div class="services-box">
+                    <h1>Web Development</h1>
+                    <i class='bx bx-right-arrow-alt' style="rotate: -45deg;"></i>
+                </div>
+                <div class="services-box">
+                    <h1>App Development</h1>
+                    <i class='bx bx-right-arrow-alt' style="rotate: -45deg;"></i>
+                </div>
+                <div class="services-box">
+                    <h1>Design</h1>
+                    <i class='bx bx-right-arrow-alt' style="rotate: -45deg;"></i>
+                </div>
+                <div class="services-box">
+                    <h1>Branding & Identity</h1>
+                    <i class='bx bx-right-arrow-alt' style="rotate: -45deg;"></i>
+                </div>
+            </div>
+        </div>
+        <!-- ----------- -->
+        <div class="blogs-container">
+            <div class="services-heading flex-row">
+                <h1>Blog Post</h1>
+                <a class="discover-button" onclick="toggleVisibility('Menu4');">
+                    Discover More
+                    <i class='bx bx-right-arrow-alt'></i>
+                </a>
+            </div>
+            <div class="blog-section flex-row hs">
+                <div class="blog-box">
+                    <div class="blog-box-top">
+                        <div class="flex-row">
+                            <h2>
+                                Why Develop  <br>
+                                MVP?
+                            </h2>
+                           <i class='bx bx-right-arrow-alt' style="rotate: -45deg;"></i>
+                        </div>
+                        <div class="flex-row">
+                            <span class="dot"></span>growth<span class="dot"></span>April,2024
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-box">
+                    <div class="blog-box-top">
+                        <div class="flex-row">
+                            <h2>
+                                Why Develop  <br>
+                                MVP?
+                            </h2>
+                           <i class='bx bx-right-arrow-alt' style="rotate: -45deg;"></i>
+                        </div>
+                        <div class="flex-row">
+                          <span class="dot"></span>growth<span class="dot"></span>April,2024
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-box">
+                    <div class="blog-box-top">
+                        <div class="flex-row">
+                            <h2>
+                                Why Develop  <br>
+                                MVP?
+                            </h2>
+                           <i class='bx bx-right-arrow-alt' style="rotate: -45deg;"></i>
+                        </div>
+                        <div class="flex-row">
+                            <span class="dot"></span>growth<span class="dot"></span>April,2024
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-box">
+                    <div class="blog-box-top">
+                        <div class="flex-row">
+                           <h2>
+                             Why Develop  <br>
+                             MVP?
+                           </h2>
+                           <i class='bx bx-right-arrow-alt' style="rotate: -45deg;"></i>
+                        </div>
+                        <div class="flex-row">
+                            <span class="dot"></span>growth<span class="dot"></span>April,2024
+                        </div>
+                    </div>
+                </div>
+                <i class='bx bx-right-arrow-alt blog-arrow'></i>
+            </div>
+        </div>
+        <!-- ----------- -->
+        <div class="contact-us">
+            <div class="services-heading flex-row">
+                <h1>Ready to grow?</h1>
+                <a class="discover-button" onclick="toggleVisibility('Menu4');">
+                    Discover More
+                    <i class='bx bx-right-arrow-alt'></i>
+                </a>
+             </div>
+        </div>
+        <!-- ----------- -->
+        <div class="empty-box" style="height: 40vh;"></div>
+        <!-- ----------- -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+        function locoInitialize(){
+               const scroll = new LocomotiveScroll({
+               el: document.querySelector('.main'),
+               smooth: true
+           });    
+        }
+
+        locoInitialize();
+    </script>
+</body>
+</html>
