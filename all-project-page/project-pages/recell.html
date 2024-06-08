@@ -10,7 +10,8 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css">
     <link rel="stylesheet" href="./css/project-page.css">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./project-page.css">
+    <link rel="stylesheet" href="./style.css">
     <style>
         .circle {
            height: 20px;
@@ -73,22 +74,22 @@
                 </p>
             </div>
             <div>
-                <ul class="project-imfo">
+                <ul class="project-info">
                     <li><span>Client</span><p>MVP Masters</p></li>
                     <li><span>Year</span><p>2023</p></li>
                     <li><span>Scope of work</span><p>Logo Design, Web Design, Webflow Development</p></li>
                     <li><span>Collaborator</span><p>Zlatko Najdenovski</p></li>
                 </ul>
             </div>
-            <div>
-                <div class="view-project-button">
-                    <a href="">View Project</a>
-                </div>
+            <div class="view-project-button">
+                <a href="">View Project <i class='bx bx-right-arrow-alt'></i></a>
             </div>
+            <div>
+          </div>
         </div>
         <!-- data-scroll data-scroll-speed="-1.5"  -->
         <div class="second-image">
-             <img  src="../images/demo-img1.webp" alt="">
+            <img src="../images/demo-img1.webp" alt="">
         </div>
 
         <div class="about-project">
@@ -115,11 +116,11 @@
             </div>
         </div>
         
-        <div class="empty-box" style="height: 40vh;"></div>
+        <!-- <div class="empty-box" style="height: 40vh;"></div> -->
     </div>    
     <!-- ---- -->
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-    <script src="../app.js"></script>
+    <!-- <script src="../app.js"></script> -->
     <script>
         function locoInitialize(){
                const scroll = new LocomotiveScroll({
@@ -129,6 +130,72 @@
         }
 
         locoInitialize();
+    </script>
+    <script>
+    // ----------------------------
+    const coords = { x: 0, y: 0 };
+    const circles = document.querySelectorAll(".circle");
+    
+    const colors = [
+      "#333",
+      "#333",
+      "#333",
+      "#333",
+      "#333",
+      "#333",
+      "#333",
+      "#333",
+      "#333",
+      "#333",
+      "#333",
+      "#333",
+      "#333",
+      "#333",
+      "#333",
+      "#333",
+      "#333",
+      "#333",
+      "#333",
+      "#333",
+      "#333",
+      "#333",
+      "#333"
+    ];
+    
+    circles.forEach(function (circle, index) {
+      circle.x = 0;
+      circle.y = 0;
+      circle.style.backgroundColor = colors[index % colors.length];
+    });
+    
+    window.addEventListener("mousemove", function(e){
+      coords.x = e.clientX;
+      coords.y = e.clientY;
+      
+    });
+    function animateCircles() {
+      
+      let x = coords.x;
+      let y = coords.y;
+      
+      circles.forEach(function (circle, index) {
+        circle.style.left = x - 12 + "px";
+        circle.style.top = y - 12 + "px";
+        
+        circle.style.scale = (circles.length - index) / circles.length;
+        
+        circle.x = x;
+        circle.y = y;
+    
+        const nextCircle = circles[index + 1] || circles[0];
+        x += (nextCircle.x - x) * 0.3;
+        y += (nextCircle.y - y) * 0.3;
+      });
+     
+      requestAnimationFrame(animateCircles);
+    }
+    animateCircles();
+    // -------------------
     </script>
 </body>
 </html>
