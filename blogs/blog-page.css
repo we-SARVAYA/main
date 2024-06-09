@@ -35,10 +35,12 @@ body{
     border: 2px solid #333333;
     border-radius: 8px;
     margin: 2rem 0;
+    height: 22vw;
 }
 .blog-box img{
     width: 100%;
-    height: 24rem;
+    height: 100%;
+    /* height: 24rem; */
     margin-right: 2rem;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
@@ -57,7 +59,7 @@ body{
     border: none;
     padding: .6rem 1rem;
     border-radius: 8px;
-    margin-top: 8rem;
+    margin-top: 8vw;
     cursor: pointer;
     transition: all ease-in-out .3s;
     border: 1px solid #000;
@@ -68,21 +70,35 @@ body{
     border: 1px solid #fff;
 }
 
+@media(max-width:1610px){ 
+    .blog-box-right p{
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .blog-box-right button{
+        margin-top: 4vw;
+    }
+    .blogs-section{
+        width: 68%;
+    }
+}
 @media(max-width:1110px){
     .blogs-section{
-        width: 70%;
+        width: 80%;
     }
     .blog-box-right button {
         margin-top: 4rem;
     }
 }
 
-@media(max-width:850px){
+@media(max-width:930px){
     .blogs-section{
         width: 90%;
     }
     .blog-box{
         flex-direction: column;
+        margin: 1rem 0;
+        height: auto;
     }
     .blog-box img {
         height: 22rem;
