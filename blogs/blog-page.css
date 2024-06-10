@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+}
 :root{
     --font-color:#000;
     --font-famity:"Jaldi", sans-serif;
@@ -22,11 +25,76 @@ body{
 
 /* ------ */
 
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    height: 10vh;
+    background-color: #fff;
+}
+.logo{
+    font-size: 2.4rem;
+    font-weight: 600;
+    background-color: #fff;
+    padding-left: 4rem;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items:end;
+    justify-content: end;
+    background-color: #000;
+    padding: 2rem 4rem;
+    width: 60%;
+    border-bottom-left-radius: 180px;
+}
+.navbar .laptop-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.bx-menu{
+    display: none;
+}
+.navbar ul li a{
+    color: #fff;
+    margin: 0 1rem;
+    font-size: 1.6rem;
+}
+.navbar-contact{
+    margin-left: 8rem;
+    background-color: #f8f8f8;
+    border-radius: 28px;
+    padding: 4px 0;
+}
+.navbar-contact a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #000!important;
+    font-weight: 600;
+    padding: 2px 0px;
+    font-size: 22px!important;
+}
+.navbar-contact a i{
+    transform: rotate(-45deg);
+    font-size: 28px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin-left: 10px;
+    padding: 1px;
+}
+.wrapper,.phone-nav{
+    display: none;
+}
 /* ------ */
 
 .heading h1{
     font-size: 3rem;
-    margin-top: 4rem;
+    margin-top: 6rem;
     border-bottom: 4px solid green;
 }
 
@@ -99,6 +167,146 @@ body{
 }
 
 @media(max-width:930px){
+    .navbar .laptop-nav{
+        display: none;
+     }
+     .navbar ul {
+         padding: 0rem;
+         width: 100%;
+     }
+     .wrapper,.phone-nav{
+         display: block;
+     }
+     .wrapper{
+       position: absolute;
+       top: 0;
+       left: 0;
+       height: 100%;
+       width: 100%;
+       background: #000;
+       clip-path: circle(25px at calc(100% - 45px) 45px);
+       transition: all 0.3s ease-in-out;
+     }
+     #active:checked ~ .wrapper{
+       clip-path: circle(75%);
+     }
+     .menu-btn{
+       position: absolute;
+       z-index: 2;
+       right: 20px;
+       /* left: 20px; */
+       top: 20px;
+       height: 50px;
+       width: 50px;
+       text-align: center;
+       line-height: 50px;
+       border-radius: 50%;
+       font-size: 20px;
+       color: #fff;
+       cursor: pointer;
+       background: #000;
+       color:#fff!important;
+       transition: all 0.3s ease-in-out;
+     }
+     #active:checked ~ .menu-btn{
+       color: #fff;
+     }
+    .bx-menu{
+        display: contents;
+    }
+     #active:checked ~ .menu-btn i:before{
+         font-family: FontAwesome;
+         content: "\f00d";
+         display: inline-block;
+         padding-right: 3px;
+         vertical-align: middle;
+     }
+     .wrapper ul{
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       list-style: none;
+       text-align: center;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+     }
+     .wrapper ul li{
+       margin: 15px 0;
+     }
+     .wrapper ul li a{
+       color: none;
+       text-decoration: none;
+       font-size: 30px;
+       font-weight: 500;
+       padding: 5px 30px;
+       color: #fff;
+       border-radius: 50px;
+       background: #000;
+       position: relative;
+       line-height: 50px;
+       transition: all 0.3s ease;
+     }
+     .wrapper ul li a:after{
+       position: absolute;
+       content: "";
+       background: #fff;
+        background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+       width: 104%;
+       height: 110%;
+       left: -2%;
+       top: -5%; /* if the font is 'Oswald'*/
+       border-radius: 50px;
+       transform: scaleY(0);
+       z-index: -1;
+       animation: rotate 1.5s linear infinite;
+       transition: transform 0.3s ease;
+     }
+     .wrapper ul li a:hover:after{
+       transform: scaleY(1);
+     }
+     .wrapper ul li a:hover{
+       color: #fff;
+     }
+     input[type="checkbox"]{
+       display: none;
+     }
+     .content{
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       z-index: 10;
+       text-align: center;
+       width: 100%;
+       color: #202020;
+     }
+     .content .title{
+       font-size: 40px;
+       font-weight: 700;
+     }
+     .content p{
+       font-size: 35px;
+       font-weight: 600;
+     }
+ 
+     /* .navbar ul li a,.navbar-contact{
+         display: none;
+     }
+     .navbar ul {
+         justify-content: space-between;
+         padding: 2rem 3.4rem;
+         width: 10%;
+         border-bottom-left-radius: 240px;
+     } */
+     .logo {
+         font-size: 2.4rem;
+         padding-left: 1rem;
+     }
+
+    /* ------------------  */
     .blogs-section{
         width: 90%;
     }
