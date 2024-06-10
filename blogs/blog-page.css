@@ -258,7 +258,7 @@ body{
        position: absolute;
        content: "";
        background: #fff;
-        background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+       background: #ccc;
        width: 104%;
        height: 110%;
        left: -2%;
