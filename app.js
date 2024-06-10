@@ -112,9 +112,16 @@ cardHoverEffect();
 
 // -------------------
 
+function scrollr(){
+  var right=document.querySelector('.blog-section');
+  right.scrollBy(350,0);
+}
+
+// -------------------
+
 
 function locoInitialize(){
-  const scroll = new LocomotiveScroll({
+  const scrollr = new LocomotiveScroll({
       el: document.querySelector('.main'),
       smooth: true
   });    
