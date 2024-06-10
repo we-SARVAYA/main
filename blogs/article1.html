@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/b8ff691037.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./blog-page.css">
+</head>
+<body>
+    <!-- -------------------------- -->
+    <nav class="navbar">
+        <h1 class="logo">Sarvaya</h1>
+        <input class="phone-nav" type="checkbox" id="active">
+        <label for="active" class="menu-btn phone-nav"><i class='bx bx-menu'></i></label>
+        <ul class="laptop-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Serices</a></li>
+            <li class="navbar-contact"><a href="#">Get in touch <i tyle="transform: rotate(-45deg);" class='bx bx-right-arrow-alt'></i></a></li>
+            <i class='bx bx-menu'></i>
+        </ul>
+        <div class="wrapper">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Get in touch</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- -------------------------- -->
+    <div class="main">
+        <div class="blogs-section">
+            <div class="heading">
+                <!-- <i class='bx back-button bx-chevron-left'></i> -->
+                <h1>A guide on Django models</h1>
+            </div>
+            <div class="article">
+                <img src="../images/recell-1.png" class="article-img" alt="">
+
+                <div class="blog-content">
+                    <h3>Table of Contents</h3>
+                    <div class="table-of-content">
+                        <h4>Models</h4>
+                        <ul>
+                            <li><a href="#">Defining a model</a></li>
+                            <li><a href="#">Adding data to the database</a></li>
+                            <li><a href="#">Defining a model</a></li>
+                            <li><a href="#">Adding data to the database</a></li>
+                            <li><a href="#">Defining a model</a></li>
+                            <li><a href="#">Adding data to the database</a></li>
+                        </ul>
+                    </div>
+                    <!-- --------------------------- -->
+                    <h3>Django models</h3>
+                    <p>
+                        Django models are the heart of the Django framework. They are used to define the structure of the database and the relationships between different models. In this section, we will explore the basics of Django models and how to create them.
+                        </p>
+                    <!-- --------------------------- -->
+                    <h3>Django models</h3>
+                    <p>
+                        Django models are the heart of the Django framework. They are used to define the structure of the database and the relationships between different models. In this section, we will explore the basics of Django models and how to create them.
+                    </p>
+                    <!-- --------------------------- -->
+                    <div class="blank-block" style="height: 1rem;"></div>
+                    <h3>Defining a model</h3>
+                    <p>
+                        So far, we have created a same chai app and it's time to add some data to it. To do this, we need to define a model. A model is a Python class that represents a table in the database. It contains fields that define the structure of the table and methods that define the behavior of the table.
+                    </p>
+                     
+                    <div class="copy-code">
+                        <div class="text-boxes">
+                            <div class="text-box HTMLBox">
+                                <div class="topic">Code:</div>
+                            
+                                <textarea id="HTMLBox" readonly>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore consequuntur fugiat quas atque reiciendis minima tempora. Facere nemo, earum hic natus neque in eaque minus dicta aut. Natus, sunt quod.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore consequuntur fugiat quas atque reiciendis minima tempora. Facere nemo, earum hic natus neque in eaque minus dicta aut. Natus, sunt quod.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore consequuntur fugiat quas atque reiciendis minima tempora. Facere nemo, earum hic natus neque in eaque minus dicta aut. Natus, sunt quod.
+                            </textarea>
+
+                            <button id="HTMLButton">Copy Codes</button>
+                        </div>
+                    </div>
+
+                    <!-- --------------------------- -->
+                    <h3>Django models</h3>
+                    <p>
+                        Django models are the heart of the Django framework. They are used to define the structure of the database and the relationships between different models. In this section, we will explore the basics of Django models and how to create them.
+                    </p>
+                    <!-- --------------------------- -->
+
+                    <div class="github-link">
+                        <a href="#">
+                            <button>View on github</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    // HTML BOx JS Code
+    let HTMLBox = document.getElementById("HTMLBox");
+    let HTMLButton = document.getElementById("HTMLButton");
+    HTMLButton.onclick = function () {
+      HTMLBox.select();
+      document.execCommand("copy");
+      HTMLButton.innerText = "Codes Copied";
+    };
+    // CSS Box Js Code
+    let CSSBox = document.getElementById("CSSBox");
+    let CSSButton = document.getElementById("CSSButton");
+    CSSButton.onclick = function () {
+      CSSBox.select();
+      document.execCommand("copy");
+      CSSButton.innerText = "Codes Copied";
+    };
+    // JavaScript BOx JS Code
+    let JSBox = document.getElementById("JSBox");
+    let JSButton = document.getElementById("JSButton");
+    JSButton.onclick = function () {
+      JSBox.select();
+      document.execCommand("copy");
+      JSButton.innerText = "Codes Copied";
+    };
+  </script>
+  <script src="../app.js"></script>
+</html>

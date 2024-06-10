@@ -322,10 +322,12 @@ a{
 
 /* ------------------- */
 .blog-section {
+    scroll-behavior: smooth;
+}
+/* .blog-section {
   --sb-track-color: #232E33;
   --sb-thumb-color: #d9d9d9;
   --sb-size: 6px!important;
-  scroll-behavior: smooth;
 }
 
 .blog-section::-webkit-scrollbar {
@@ -342,7 +344,7 @@ a{
   background: var(--sb-thumb-color);
   border-radius: 30px;
   border: 1px solid #ccc;
-}
+} */
 
 @supports not selector(::-webkit-scrollbar) {
   .blog-section {
@@ -363,8 +365,7 @@ a{
     overflow-x: scroll;
     scroll-snap-type: x proximity;
     padding-bottom: calc(.75 * var(--gutter));
-    margin-bottom: calc(-.25 * var(--gutter));
-    
+    margin-bottom: calc(-.25 * var(--gutter));  
 } 
 .hs:before,
 .hs:after {
