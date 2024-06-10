@@ -41,6 +41,12 @@ body{
     justify-content: space-between;
     margin: 1rem 0;
 }
+.all-projects .project-box:hover{
+   .all-projects .project-box img{
+      display: none;
+   }
+
+}
 .all-projects .project-box img{
     width: 44vw;
     height: 26vw;
@@ -57,6 +63,7 @@ body{
     filter: contrast(120%);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
+
 .all-projects .project-box {
     display: flex;
     flex-direction: column;
