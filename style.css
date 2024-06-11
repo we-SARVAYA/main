@@ -855,6 +855,9 @@ a{
         font-weight: 600;
         /* height: 4rem; */
         border-radius: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .project-box h2{
         font-size: 1.6rem;
