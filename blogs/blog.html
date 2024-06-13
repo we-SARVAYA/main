@@ -34,6 +34,7 @@
     </nav>
     <!-- -------------------------- -->
     <div class="main">
+        <button onclick="enterDarkMode()" class="dark-mode-button"><i class='bx bxs-moon'></i></button>
         <div class="blogs-section">
             <div class="heading">
                 <h1>Our Blogs</h1>
@@ -107,4 +108,15 @@
 
     </div>
 </body>
+<script>
+    function enterDarkMode() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+
+    //   var darkModeButton = document.querySelector('.dark-mode-button');
+    //   darkModeButton.innerHTML="<i class='bx bx-sun' ></i>";
+    //   darkModeButton.style.backgroundColor='#fff';
+    //   darkModeButton.style.color='#000';
+    }
+</script>
 </html>

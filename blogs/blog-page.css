@@ -15,16 +15,34 @@ li{
 }
 body{
     font-family: var(--font-famity);
-    background-color: #fff;
-}
-
-.main{
     color: #000;
     background-color: #fff;
+}
+.main{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+.dark-mode-button{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    height: 4rem;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #000;
+    width: 4rem;
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* ------ */
 .navbar{
@@ -37,7 +55,7 @@ body{
 .logo{
     font-size: 2.4rem;
     font-weight: 600;
-    background-color: #fff;
+    background-color: transparent;
     padding-left: 4rem;
 }
 
@@ -113,7 +131,7 @@ body{
     border-radius: 8px;
     margin: 2rem 0;
     height: 22vw;
-    background-color: #cccccc61;
+    /* background-color: #cccccc61; */
 }
 .blog-box img{
     width: 100%;

@@ -35,6 +35,7 @@
     </nav>
     <!-- -------------------------- -->
     <div class="main">
+        <button onclick="enterDarkMode()" class="dark-mode-button">Dark mode</button>
         <div class="blogs-section">
             <div class="heading">
                 <!-- <i class='bx back-button bx-chevron-left'></i> -->
@@ -129,5 +130,15 @@
       JSButton.innerText = "Codes Copied";
     };
   </script>
+  <script>
+    function enterDarkMode() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+
+      var logo = document.querySelector('.logo');
+      logo.style.backgroundColor="000";
+      
+    }
+   </script>
   <script src="../app.js"></script>
 </html>

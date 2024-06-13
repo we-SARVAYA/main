@@ -129,3 +129,11 @@ function locoInitialize(){
 
 locoInitialize();
 
+
+function serviceBoxExpand(){
+  document.getElementById("titleRegister").style.color = "blue";
+}
+function serviceBoxShrink(){
+  document.getElementById("titleRegister").style.color = "black";
+}
+
