@@ -317,12 +317,16 @@
                </a>
             </div>
             <div class="contact-form">
-                <h2>My name is <input type="text" placeholder="Enter your name"> and 
-                have a <input type="text" placeholder="Your project"> that 
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="322f987e-71c7-4955-a618-c507f4fa9b78">
+                <h2>My name is <input type="text" name="name" required placeholder="Enter your name"> and 
+                have a <input type="text" name="message" required placeholder="Your project"> that 
                 needs help. You can reach me at
                  <input type="email" placeholder="Your Email address"> to get things started.</h2>
-
                 <button href="#">Lets get started</button>
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <a type="submit" href="#">Lets get started</a>
+                    </form>
             </div>
         </div>
         <!-- ----------- -->
