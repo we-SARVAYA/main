@@ -137,3 +137,23 @@ function serviceBoxShrink(){
   document.getElementById("titleRegister").style.color = "black";
 }
 
+
+// function serviceBoxExpand(){
+//     var box = document.querySelector('.services-box-head');
+//     if(MouseEvent=true){
+//       box.style.display='block';
+//     }else{
+//       box.style.display='none';
+//     }
+// }
+
+
+var box = document.querySelector('.services-box-head');
+
+box.on('mouseover', () => {
+  box.style.display='block';
+});
+
+box.on('mouseout'), () => {
+  box.style.display='none';
+}
