@@ -148,12 +148,16 @@ function serviceBoxShrink(){
 // }
 
 
-var box = document.querySelector('.services-box-head');
+var box = document.querySelector('.services-box');
 
-box.on('mouseover', () => {
-  box.style.display='block';
-});
+// "Wire" the element's events
+box.addEventListener("mouseover", mouseOver);
+box.addEventListener("mouseout", mouseOut);
 
-box.on('mouseout'), () => {
-  box.style.display='none';
+function mouseOver() {
+  box.classList.add("on-mouse-hover");
+}
+
+function mouseOut() {
+  box.classList.remove("on-mouse-hover");
 }

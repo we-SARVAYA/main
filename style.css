@@ -302,9 +302,9 @@ a{
     height: 20vw;
     transition: all ease-in-out 1s;  
 } */
-/* .on-mouse-hover{
+.on-mouse-hover{
     display: none;
-} */
+}
 .on-mouse-hover{
     height: 20vw;
     transition: all ease-in-out 1s;
