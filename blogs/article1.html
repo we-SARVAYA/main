@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./blog-page.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
 </head>
 <body>
     <!-- -------------------------- -->
@@ -18,9 +20,9 @@
         <input class="phone-nav" type="checkbox" id="active">
         <label for="active" class="menu-btn phone-nav"><i class='bx bx-menu'></i></label>
         <ul class="laptop-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Serices</a></li>
+            <li><a class="light-nav-color" href="#">Home</a></li>
+            <li><a class="light-nav-color" href="#">Work</a></li>
+            <li><a class="light-nav-color" href="#">Serices</a></li>
             <li class="navbar-contact"><a href="#">Get in touch <i tyle="transform: rotate(-45deg);" class='bx bx-right-arrow-alt'></i></a></li>
             <i class='bx bx-menu'></i>
         </ul>
@@ -35,7 +37,10 @@
     </nav>
     <!-- -------------------------- -->
     <div class="main">
-        <button onclick="enterDarkMode()" class="dark-mode-button"><i class='bx bxs-moon'></i></button>
+        <div class="dark-mode-button">
+            <i class="bi bi-moon" id="toggleDark"></i>
+        </div>
+
         <div class="blogs-section">
             <div class="heading">
                 <!-- <i class='bx back-button bx-chevron-left'></i> -->
@@ -77,7 +82,7 @@
                     <div class="copy-code">
                         <div class="text-boxes">
                             <div class="text-box HTMLBox">
-                                <div class="topic">Code:</div>
+                                <h4 style="font-size: 1.4rem;">Code</h4>
                             
                                 <textarea id="HTMLBox" readonly>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore consequuntur fugiat quas atque reiciendis minima tempora. Facere nemo, earum hic natus neque in eaque minus dicta aut. Natus, sunt quod.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore consequuntur fugiat quas atque reiciendis minima tempora. Facere nemo, earum hic natus neque in eaque minus dicta aut. Natus, sunt quod.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore consequuntur fugiat quas atque reiciendis minima tempora. Facere nemo, earum hic natus neque in eaque minus dicta aut. Natus, sunt quod.
                             </textarea>
@@ -131,14 +136,29 @@
     };
   </script>
   <script>
-    function enterDarkMode() {
-      var element = document.body;
-      element.classList.toggle("dark-mode");
+    const toggle = document.getElementById('toggleDark');
+const body = document.querySelector('body');
+const lightNav=document.querySelector('.laptop-nav');
+const lightNavColor=document.querySelectorAll('.light-nav-color');
 
-      var logo = document.querySelector('.logo');
-      logo.style.backgroundColor="000";
-      
+toggle.addEventListener('click', function(){
+    this.classList.toggle('bi-brightness-high-fill');
+    if(this.classList.toggle('bi-moon')){
+        body.style.background = 'white';
+        body.style.color = 'black';
+        body.style.transition = '.5s';
+        lightNav.style.background='black';
+     
+        lightNavColor.style.color='white';
+    }else{
+        body.style.background = 'black';
+        body.style.color = 'white';
+        body.style.transition = '.5s';
+        lightNav.style.background='white';
+
+        lightNavColor.style.color='black';
     }
+});
    </script>
   <script src="../app.js"></script>
 </html>

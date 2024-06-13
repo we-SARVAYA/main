@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 :root{
     --font-color:#000;
     --font-famity:"Jaldi", sans-serif;
@@ -13,7 +12,9 @@ body{
     cursor: none;
     background-color: #fff;
 }
-
+::-webkit-scrollbar {
+    display: none;
+}
 html, body {
     height: 100%;
     width: 100%;
@@ -22,6 +23,7 @@ html, body {
     /* background-color: #000; */
     position: relative;
     z-index: 10;
+    /* background-color: #fa7202; */
     background-color: #fff;
 }
 .flex-row{
@@ -302,13 +304,8 @@ a{
     height: 20vw;
     transition: all ease-in-out 1s;  
 } */
-.on-mouse-hover{
-    display: none;
-}
-.on-mouse-hover{
-    height: 20vw;
-    transition: all ease-in-out 1s;
-}
+
+
 
 .services-main .services-box i{
     font-size: 3vw;
@@ -483,7 +480,7 @@ a{
     background-color: #cccccc36;
 }
 
-.contact-form a {
+.contact-form button {
   font-size: 16px;
   font-weight: 200;
   letter-spacing: 1px;
@@ -504,7 +501,7 @@ a{
   margin-top: 2rem;
 }
 
-.contact-form a:after {
+.contact-form button:after {
   content: "";
   background-color: #000;
   width: 100%;
@@ -516,7 +513,7 @@ a{
   transition: 0.2s;
 }
 
-.contact-form a:hover:after {
+.contact-form button:hover:after {
   top: 0px;
   left: 0px;
 }

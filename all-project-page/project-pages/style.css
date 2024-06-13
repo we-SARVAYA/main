@@ -203,7 +203,7 @@ a{
     align-items: start;
     justify-content: space-between;
     height: 30vw;
-    width: 30%;
+    width: 30vw;
     margin: 1rem;
     padding: 2rem 2rem;
     background-color: #ccc;
@@ -212,6 +212,9 @@ a{
     border-radius: 12px 12px 40px 12px;
     background-size: 100%;
 }
+
+
+
 .project-box-heading{
     display: flex;
     align-items: center;

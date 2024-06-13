@@ -147,17 +147,3 @@ function serviceBoxShrink(){
 //     }
 // }
 
-
-var box = document.querySelector('.services-box');
-
-// "Wire" the element's events
-box.addEventListener("mouseover", mouseOver);
-box.addEventListener("mouseout", mouseOut);
-
-function mouseOver() {
-  box.classList.add("on-mouse-hover");
-}
-
-function mouseOut() {
-  box.classList.remove("on-mouse-hover");
-}
