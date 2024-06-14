@@ -113,37 +113,43 @@ cardHoverEffect();
 // -------------------
 
 function scrollr(){
-  var right=document.querySelector('.blog-section');
+  var right=document.querySelector('.scroll-right');
   right.scrollBy(350,0);
+}
+
+function scrolll(){
+  var left=document.querySelector('.scroll-left');
+  left.scrollBy(0,350);
 }
 
 // -------------------
 
+var before=  document.querySelector('#before');
+var after= document.querySelector('#after');
 
-function locoInitialize(){
-  const scrollr = new LocomotiveScroll({
-      el: document.querySelector('.main'),
-      smooth: true
-  });    
+function replace(){
+  before.style.display='none';
+  after.style.display='block';
 }
 
-locoInitialize();
-
-
-function serviceBoxExpand(){
-  document.getElementById("titleRegister").style.color = "blue";
-}
-function serviceBoxShrink(){
-  document.getElementById("titleRegister").style.color = "black";
+function replaceAgain(){
+  before.style.display='block';
+  after.style.display='none';
 }
 
 
-// function serviceBoxExpand(){
-//     var box = document.querySelector('.services-box-head');
-//     if(MouseEvent=true){
-//       box.style.display='block';
-//     }else{
-//       box.style.display='none';
-//     }
-// }
+
+var before2=  document.querySelector('#before2');
+var after2= document.querySelector('#after2');
+
+function replace1(){
+  before2.style.display='none';
+  after2.style.display='block';
+}
+
+function replaceAgain2(){
+  before2.style.display='block';
+  after2.style.display='none';
+}
+
 

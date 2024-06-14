@@ -203,45 +203,68 @@
             </div>
             <div class="services-main">
                 <!-- ----------------------------- -->
-                <div onmouseover="serviceBoxExpand()" onmouseout="serviceBoxShrink()" class="services-box">
+                <div onclick="replace()" id="before" class="services-box">
                     <div class="services-box-head">
                         <h1>Web Development</h1>
                         <i class='bx bx-right-arrow-alt' style="rotate: -45deg;"></i>                    
                     </div>
-                    <p class="services-content">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus reiciendis blanditiis assumenda, laborum odit excepturi omnis cum, qui magni et, soluta animi numquam sapiente nesciunt veritatis aliquam quos? Consequatur, incidunt!
-                    </p>
                 </div>
 
+                <div onclick="replaceAgain()" id="after" class="services-box">
+                    <div class="services-content">
+                        <div>
+                            <h1>Web Development</h1>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias laborum dolores rem minima et soluta voluptatem quia recusandae temporibus eligendi necessitatibus pariatur quae, officiis fugiat modi officia? Laudantium, debitis iusto!
+                            </p>
+                            <button class="services-discover">
+                                Discover More
+                                <i class='bx bx-chevron-right'></i>
+                            </button>
+                        </div>
+
+                        <img src="./images/services-img-1.png" alt="">
+
+                        <div class="services-arrow">
+                            <i class='bx bx-right-arrow-alt' style="rotate: -45deg;"></i>                    
+                        </div>                
+                </div>      
+            </div>
+            <div class="services-main">
                 <!-- ----------------------------- -->
-                <!-- <div class="services-box">
+                <div onclick="replace1()" id="before2" class="services-box">
                     <div class="services-box-head">
-                        <h1>Web Development</h1>
+                        <h1>Service 2</h1>
                         <i class='bx bx-right-arrow-alt' style="rotate: -45deg;"></i>                    
                     </div>
-                </div> -->
-                <!-- ----------------------------- -->
-                <!-- <div class="services-box">
-                    <div class="services-box-head">
-                        <h1>Web Development</h1>
-                        <i class='bx bx-right-arrow-alt' style="rotate: -45deg;"></i>                    
-                    </div>
-                </div> -->
-                <!-- ----------------------------- -->
-                <!-- <div class="services-box">
-                    <div class="services-box-head">
-                        <h1>Web Development</h1>
-                        <i class='bx bx-right-arrow-alt' style="rotate: -45deg;"></i>                    
-                    </div>
-                </div> -->
-                <!-- ----------------------------- -->
+                </div>
+                
+                <div onclick="replaceAgain2()" id="after2" class="services-box">
+                    <div class="services-content">
+                        <div>
+                            <h1>service 2</h1>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias laborum dolores rem minima et soluta voluptatem quia recusandae temporibus eligendi necessitatibus pariatur                 quae, officiis fugiat modi officia? Laudantium, debitis iusto!
+                            </p>
+                            <button class="services-discover">
+                                Discover More
+                                <i class='bx bx-chevron-right'></i>
+                            </button>
+                        </div>
+                
+                        <img src="./images/services-img-1.png" alt="">
+                
+                        <div class="services-arrow">
+                            <i class='bx bx-right-arrow-alt' style="rotate: -45deg;"></i>                    
+                        </div>                
+                </div> 
             </div>
         </div>
+        
         <!-- ----------- -->
+        </div>
         <div class="blogs-container">
             <div class="services-heading flex-row">
                 <h1>Blog Post</h1>
-                <a class="discover-button" onclick="toggleVisibility('Menu4');">
+                <a class="discover-button">
                     Discover More
                     <i class='bx bx-right-arrow-alt'></i>
                 </a>
@@ -304,14 +327,17 @@
                     </div>
                 </div>
 
-                <i onclick="scrollr()" id="scroll-right" class='bx bx-right-arrow-alt blog-arrow'></i>
+                <div class="blog-arrows">
+                    <i onclick="scrollr()" id="scroll-right" class='bx bx-left-arrow-alt blog-arrow'></i>
+                    <i onclick="scrollr()" id="scroll-left" class='bx bx-left-arrow-alt'></i>
+                </div>
             </div>
         </div>
         <!-- ----------- -->
         <div class="contact-us">
             <div class="services-heading flex-row">
                <h1>Ready to grow?</h1>
-               <a class="discover-button" onclick="toggleVisibility('Menu4');">
+               <a class="discover-button">
                    Discover More
                    <i class='bx bx-right-arrow-alt'></i>
                </a>
@@ -322,11 +348,10 @@
                 <h2>My name is <input type="text" name="name" required placeholder="Enter your name"> and 
                 have a <input type="text" name="message" required placeholder="Your project"> that 
                 needs help. You can reach me at
-                 <input type="email" placeholder="Your Email address"> to get things started.</h2>
-                <button href="#">Lets get started</button>
-            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                <a type="submit" href="#">Lets get started</a>
-                    </form>
+                  <input type="email" placeholder="Your Email address"> to get things started.</h2>
+                  <button href="#">Lets get started</button>
+                  <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                </form>
             </div>
         </div>
         <!-- ----------- -->

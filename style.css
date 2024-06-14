@@ -299,13 +299,81 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+.services-box-head p{
+    width: 30%;
 }
 /* .services-main .services-box:hover{
     height: 20vw;
     transition: all ease-in-out 1s;  
 } */
+.services-box .services-content{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+}
+.services-box .services-content div:nth-child(1){
+    margin-left: 4rem;
+    margin-top: 2rem;
+    width: 30%;
+}
+.services-content img{
+    height: 100%;
+}
+.services-content h1{
+    font-size: 2.4vw;
+}
+.services-content p{
+    margin-top: 1.8vw;
+    font-size: 1.6rem;
+    line-height: 28px;
+}
+.services-content .services-arrow i{
+    position: relative;
+    top: 160px;
+    right: 20px;
+}
 
+.services-discover{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 13rem;
+    height: 3.4rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 4rem;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 4px;
+}
+.services-discover i{
+    border: none!important;
+    height: 2.8rem!important;
+    width: 2.8rem!important;
+    font-size: 42px!important;
+}
 
+#after{
+    padding: 0;
+}
+#after2{
+    padding: 0;
+}
+/* --- */
+#after{
+    display: none;
+}
+#after2{
+    display: none;
+}
+#before2{
+    width: 90vw;
+}
+/* --- */
 
 .services-main .services-box i{
     font-size: 3vw;
@@ -440,7 +508,7 @@ a{
 .blog-arrow{
     font-size: 4rem;
     position: absolute;
-    right: 40px;
+    left: 40px;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 50%;
@@ -663,6 +731,52 @@ footer h3{
         background-color: orange;
         cursor: pointer;
     }
+
+    /* ------------------- */
+    .services-box .services-content{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+    }
+    .services-box .services-content div:nth-child(1){
+        margin-left: 2rem;
+        margin-top: 2rem;
+        width: 30%;
+    }
+    .services-content img{
+        height: 100%;
+        
+    }
+    .services-content h1{
+        font-size: 2.4vw;
+    }
+    .services-content p{
+        margin-top: 1vw;
+        font-size: 1.2rem;
+        line-height: 22px;
+    }
+    .services-content .services-arrow i{
+        position: relative;
+        top: 160px;
+        right: 8px;
+        transform: scale(.8);
+    }
+    .services-discover {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 10rem;
+        height: 3rem;
+        margin-top: 1rem;
+        border: none;
+        border-radius: 4rem;
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 4px;
+    }
+    /* ------------------- */
     
     .hero-bottom-1{
         background-color: #000;
@@ -989,7 +1103,7 @@ footer h3{
     }
     /* ---------------------------------- */ 
     .services-main .services-box{
-        height: 20vw;
+        /* height: 20vw; */
         font-size: 3.4vw;
     }
     .services-heading{
@@ -1001,10 +1115,10 @@ footer h3{
         flex-direction: row;
         align-items: center;
     }
-    .services-main .services-box {
+    /* .services-main .services-box {
         display: flex;
         align-items: center;
-    }
+    } */
     .services-main .services-box i {
         font-size: 5vw;
         display: flex;
@@ -1012,6 +1126,56 @@ footer h3{
         justify-content: center;
         height: 1.9rem;
         width: 1.9rem;
+    }
+
+    
+    /* ------------------- */
+    .services-box .services-content{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        /* height: 40vh; */
+    }
+    .services-box .services-content div:nth-child(1){
+        margin-left: 2rem;
+        margin-top: 2rem;
+        width: 80%;
+    }
+    .services-content img{
+        width: 100%;
+        border-bottom-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+    }
+    .services-content h1{
+        font-size: 7vw;
+    }
+    .services-content p{
+        margin-top: 1vw;
+        font-size: 1rem;
+        line-height: 20px;
+    }
+    .services-content .services-arrow i{
+        position: relative;
+        top: 0px;
+        left: 150px;
+        transform: scale(1.4);
+        margin: 1rem 0;
+    }
+    .services-discover {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 10rem;
+        height: 3rem;
+        margin-top: 1rem;
+        border: none;
+        border-radius: 4rem;
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 4px;
+        margin-bottom: 2rem;
     }
     /* ---------------------------------- */
 
