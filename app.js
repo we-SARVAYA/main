@@ -113,13 +113,13 @@ cardHoverEffect();
 // -------------------
 
 function scrollr(){
-  var right=document.querySelector('.scroll-right');
+  var right=document.querySelector('.blog-section');
   right.scrollBy(350,0);
 }
 
 function scrolll(){
-  var left=document.querySelector('.scroll-left');
-  left.scrollBy(0,350);
+  var left=document.querySelector('.blog-section');
+  left.scrollBy(-350,0);
 }
 
 // -------------------
@@ -136,7 +136,6 @@ function replaceAgain(){
   before.style.display='block';
   after.style.display='none';
 }
-
 
 
 var before2=  document.querySelector('#before2');
