@@ -128,6 +128,11 @@ body{
 .services-box p{
     font-size: 1vw;
 }
+
+.buttons{
+     margin-left: 4rem;
+}
+
 .contact-arrow-svg{
     transform: rotate(-1deg);
 }
@@ -161,6 +166,10 @@ body{
 }
 
 @media(max-width:1200px){
+    .buttons{
+        margin-left: 2.5rem;
+        font-size: 1rem;
+    }
     .project-hero {
         flex-direction: column;
         align-items: start;
@@ -183,6 +192,13 @@ body{
     }
 }
 @media(max-width:860px){
+    .buttons{
+        margin-left: .5rem;
+        font-size: .6rem;
+    }
+    .project-filter .buttons a {
+        margin: 1rem .1rem;
+    }
     .wrapper{
         z-index: 100;
     }
@@ -206,7 +222,7 @@ body{
         margin-left: .1rem;
     }
     .all-projects {
-        padding: 1rem;
+        padding: 0 1rem;
         width: 100vw;
         /* border-top: 2px solid #ccc; */
     }
