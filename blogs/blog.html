@@ -18,9 +18,9 @@
         <input class="phone-nav" type="checkbox" id="active">
         <label for="active" class="menu-btn phone-nav"><i class='bx bx-menu'></i></label>
         <ul class="laptop-nav">
-            <li><a class="light-nav-color" href="#">Home</a></li>
-            <li><a class="light-nav-color" href="#">Work</a></li>
-            <li><a class="light-nav-color" href="#">Serices</a></li>
+            <li><a class="nav-links" href="#">Home</a></li>
+            <li><a class="nav-links" href="#">Work</a></li>
+            <li><a class="nav-links" href="#">Serices</a></li>
             <li class="navbar-contact"><a href="#">Get in touch <i tyle="transform: rotate(-45deg);" class='bx bx-right-arrow-alt'></i></a></li>
             <i class='bx bx-menu'></i>
         </ul>
@@ -121,7 +121,7 @@
 const toggle = document.getElementById('toggleDark');
 const body = document.querySelector('body');
 const lightNav=document.querySelector('.laptop-nav');
-const lightNavColor=document.querySelectorAll('.light-nav-color');
+const navLinks=document.querySelectorAll('.nav-links');
 
 toggle.addEventListener('click', function(){
     this.classList.toggle('bi-brightness-high-fill');
@@ -130,17 +130,20 @@ toggle.addEventListener('click', function(){
         body.style.color = 'black';
         body.style.transition = '.5s';
         lightNav.style.background='black';
-     
-        lightNavColor.style.color='white';
+        
+        navLinks[0].style.color='white';
+        navLinks[1].style.color='white';
+        navLinks[2].style.color='white';
     }else{
         body.style.background = 'black';
         body.style.color = 'white';
         body.style.transition = '.5s';
         lightNav.style.background='white';
-
-        lightNavColor.style.color='black';
+        
+        navLinks[0].style.color='black';
+        navLinks[1].style.color='black';
+        navLinks[2].style.color='black';
     }
 });
-
 </script>
 </html>
