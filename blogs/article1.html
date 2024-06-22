@@ -11,7 +11,9 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./blog-page.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <style>
 
+    </style>
 </head>
 <body>
     <!-- -------------------------- -->
@@ -106,7 +108,54 @@
                 </div>
             </div>
         </div>
+        </div>
+        </div>
+        <footer>
+            <div class="footer-top">
+                <div class="footer-socials">
+                    <h3>Our Social</h3>
+                    <ul>
+                        <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                        <li><a href="#"><i class='bx bxl-linkedin' ></i></a></li>
+                        <li><a href="#"><i class='bx bxl-github' ></i></a></li>
+                        <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                    </ul>
+                </div>
+                <div  class="footer-links">
+                    <div>
+                        <h3>Find Work</h3>
+                        <ul>
+                            <li><a href="#">Explore Jobs</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Collection</a></li>
+                            <li><a href="#">Brouse</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>One</h3>
+                        <ul>
+                            <li><a href="#">Learn More</a></li>
+                            <li><a href="#">conditions</a></li>
+                            <li><a href="#">Blogs</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>One</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-bottom">
+            <span>All Rights Reserve@Sarvaya</span>
+        </div>
     </div>
+    
 </body>
 
 <script>
@@ -136,33 +185,33 @@
     };
   </script>
   <script>
-    const toggle = document.getElementById('toggleDark');
-    const body = document.querySelector('body');
-    const lightNav=document.querySelector('.laptop-nav');
-    const navLinks=document.querySelectorAll('.nav-links');
-    
-    toggle.addEventListener('click', function(){
-        this.classList.toggle('bi-brightness-high-fill');
-        if(this.classList.toggle('bi-moon')){
-            body.style.background = 'white';
-            body.style.color = 'black';
-            body.style.transition = '.5s';
-            lightNav.style.background='black';
-            
-            navLinks[0].style.color='white';
-            navLinks[1].style.color='white';
-            navLinks[2].style.color='white';
-        }else{
-            body.style.background = 'black';
-            body.style.color = 'white';
-            body.style.transition = '.5s';
-            lightNav.style.background='white';
-            
-            navLinks[0].style.color='black';
-            navLinks[1].style.color='black';
-            navLinks[2].style.color='black';
-        }
-    });
+   const toggle = document.getElementById('toggleDark');
+const body = document.querySelector('body');
+const lightNav=document.querySelector('.laptop-nav');
+const navLinks=document.querySelectorAll('.nav-links');
+
+toggle.addEventListener('click', function(){
+    this.classList.toggle('bi-brightness-high-fill');
+    if(this.classList.toggle('bi-moon')){
+        body.style.background = 'white';
+        body.style.color = 'black';
+        body.style.transition = '.5s';
+        lightNav.style.background='black';
+        
+        navLinks[0].style.color='white';
+        navLinks[1].style.color='white';
+        navLinks[2].style.color='white';
+    }else{
+        body.style.background = 'black';
+        body.style.color = 'white';
+        body.style.transition = '.5s';
+        lightNav.style.background='white';
+        
+        navLinks[0].style.color='black';
+        navLinks[1].style.color='black';
+        navLinks[2].style.color='black';
+    }
+});
     </script>
   <script src="../app.js"></script>
 </html>

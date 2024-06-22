@@ -202,6 +202,7 @@ a{
     display: flex;
     align-items: start;
     justify-content: space-between;
+    flex-direction: column;
     height: 30vw;
     width: 30vw;
     margin: 1rem;
