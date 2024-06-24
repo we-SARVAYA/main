@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="../services/services-page.css">
+    <script src="https://kit.fontawesome.com/b8ff691037.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"
+    /> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./about-page.css">
+    <style>
+        .circle {
+           height: 20px;
+           width: 20px;
+           border-radius: 24px;
+           background-color: black;
+           position: fixed; 
+           top: 0;
+           left: 0;
+           pointer-events: none;
+           z-index: 99999999; /* so that it stays on top of all other elements */
+        }
+    </style>
+</head>
+<body>
+    <!-- ---- -->
+    <div class="main-cursor">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <!-- ---- -->
+    <div class="main">
+        <!-- ----------- -->
+        <div class="hero-container">
+
+             <nav class="navbar">
+                <h1 class="logo">Sarvaya</h1>
+                <input class="phone-nav" type="checkbox" id="active">
+                <label for="active" class="menu-btn phone-nav"><i class='bx bx-menu'></i></label>
+                <ul class="laptop-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Serices</a></li>
+                    <li class="navbar-contact"><a href="#">Get in touch <i tyle="transform: rotate(-45deg);" class='bx bx-right-arrow-alt'></i></a></li>
+                    <i class='bx bx-menu'></i>
+                </ul>
+                <div class="wrapper" >
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Get in touch</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+     <!-- ----------- -->
+     <div class="services-container">
+       <div class="services-sub-container">
+       <!-- ----------- -->
+        <div class="about-hero">
+            <div class="about-head">
+                <h3>About Us</h3>
+                <h1>
+                    We, at Leo9 Studio, apply neuromarketing
+                    and behavioral science to design, digitize
+                    and grow your business.
+                </h1>
+            </div>
+            <div>
+                <img src="../images/business-3d-young-people-in-casual-clothes-standing.png" alt="">
+            </div>
+            <!-- <div>
+                <img src="../images/shine-young-people-working-in-a-team.png" alt="">
+            </div> -->
+        </div>
+       <!-- ----------- -->
+       <div class="about-service">
+           <h1 data-aos-delay="100" data-aos="fade-up">Who are we</h1>
+           <p data-aos-delay="50" data-aos="fade-up">
+               At the intersection of art, technology and business, we create design solutions geared toward business success.
+               Since 2012, we have been global leaders in design technology. Our services range from experience designing, identity development, product strategy, branding, user experience design, user interface design, technology development to digital marketing and SEO.
+            </p>
+            <h2><i class='bx bx-loader-circle'></i><a href="#">read More</a></h2>
+         </div>
+         <!-- ----------- -->
+        <ul id="cards">
+            <li class="card" id="card_1">
+                <div class="card__content">
+                    <div>
+                        <h2>Our Mission</h2>
+                        <p>To be the world's best and most trusted human experience design
+                        company.</p>
+                    </div>
+                    <figure>
+                        <img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-1.jpg" alt="Image description">
+                    </figure>
+                </div>
+            </li>
+            <li class="card" id="card_2">
+                <div class="card__content">
+                    <div>
+                        <h2>Our Vision</h2>
+                        <p>To enhance and elevate human interaction.</p>
+                    </div>
+                    <figure>
+                        <img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-2.jpg" alt="Image description">
+                    </figure>
+                </div>
+            </li>
+            <li class="card" id="card_3">
+                <div class="card__content">
+                    <div>
+                        <h2>Our Values</h2>
+                        <p>To pursue excellence through dedicated teamwork.</p>
+                    </div>
+                    <figure>
+                        <img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-3.jpg" alt="Image description">
+                    </figure>
+                </div>
+            </li>
+        </ul>
+         <!-- ----------- -->
+         <div class="sub-services-container">
+            <h3  data-aos="fade-up">What Do We Serve ?</h3>
+            <h1 data-aos="fade-up">We help you design <br>
+                a simple idea into an <br>
+                enduring vision. <br>
+            </h1>
+            <div class="sub-services" data-aos="fade-up">
+                <div data-aos="fade-up" data-aos-delay="80">
+                    <h2>UI Design</h2>
+                    <h2>UI Development</h2>
+                    <h2>UI Guidelines</h2>
+                    <h2>Design System</h2>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h2>UX Design</h2>
+                    <h2>User Research</h2>
+                    <h2>UX Consultancy</h2>
+                    <h2>UX Writing</h2>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="120">
+                    <h2>Animations</h2>
+                    <h2>Iconography</h2>
+                    <h2>Illustrations</h2>
+                    <h2>Figma</h2>
+                </div>
+            </div>
+         </div>
+       <!-- ----------- -->
+        <div class="faq-section">
+              
+    <div  data-aos="fade-up" class="container">
+        <div data-aos="fade-up" data-aos-delay="100" class="accordion__wrapper">
+            <h1 class="accordion__title"><span>Frequently</span> Asked Questions</h1>
+    
+            <!-- Accordion 1  -->
+            <div class="accordion">
+                <div class="accordion__header">
+                    <h2 class="accordion__question">What is the purpose of this pen?</h2>
+                    <span class="accordion__icon">
+                        <i id="accordion-icon" class="ri-add-line"></i>
+                    </span>
+                </div>
+                <div class="accordion__content">
+                    <p class="accordion__answer">This pen is designed to provide web developers with boilerplate code for a FAQ Accordion.</p>
+                </div>
+            </div>
+    
+            <!-- Accordion 2  -->
+            <div class="accordion">
+                <div class="accordion__header">
+                    <h2 class="accordion__question">What is an accordion?</h2>
+                    <span class="accordion__icon">
+                        <i id="accordion-icon" class="ri-add-line"></i>
+                    </span>
+                </div>
+                <div class="accordion__content">
+                    <p class="accordion__answer">An accordion is a vertically stacked list of headers that users can click on to reveal more information about a business. With an accordion, when someone visits your web page, they will see a list of headers.</p>
+                </div>
+            </div>
+    
+            <!-- Accordion 3 -->
+            <div class="accordion">
+                <div class="accordion__header">
+                    <h2 class="accordion__question">How can I customize the accordion?</h2>
+                    <span class="accordion__icon">
+                        <i id="accordion-icon" class="ri-add-line"></i>
+                    </span>
+                </div>
+                <div class="accordion__content">
+                    <p class="accordion__answer">You can customize the accordion by modifying the CSS styles and changing the HTML structure as per your needs. You can also add JavaScript to enhance its functionality.</p>
+                </div>
+            </div>
+
+            <!-- Accordion 4 -->
+            <div class="accordion">
+                <div class="accordion__header">
+                    <h2 class="accordion__question">Is this accordion responsive?</h2>
+                    <span class="accordion__icon">
+                        <i id="accordion-icon" class="ri-add-line"></i>
+                    </span>
+                </div>
+                <div class="accordion__content">
+                    <p class="accordion__answer">Yes, this accordion is designed to be responsive and will adjust its layout based on the screen size to ensure a good user experience on both desktop and mobile devices.</p>
+                </div>
+            </div>
+    
+            <!-- Accordion 5 -->
+            <div class="accordion">
+                <div class="accordion__header">
+                    <h2 class="accordion__question">Can I use this accordion in my project?</h2>
+                    <span class="accordion__icon">
+                        <i id="accordion-icon" class="ri-add-line"></i>
+                    </span>
+                </div>
+                <div class="accordion__content">
+                    <p class="accordion__answer">Absolutely! Feel free to use this accordion in your projects. You can modify and adapt it as needed to fit your requirements.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+        </div>
+       </div>
+     </div>
+     <!-- ----------- -->
+
+     <!-- ----------- -->
+     <div class="contact-us">
+        <div class="services-heading flex-row">
+           <h1>Ready to grow?</h1>
+           <a class="discover-button">
+               Discover More
+               <i class='bx bx-right-arrow-alt'></i>
+           </a>
+        </div>
+        <div class="contact-form">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key"     value="322f987e-71c7-4955-a618-c507f4fa9b78">
+            <h2>My name is <input type="text" name="name" required placeholder="Enter your name">     and 
+            have a <input type="text" name="message" required placeholder="Your project"> that 
+            needs help. You can reach me at
+              <input type="email" placeholder="Your Email address"> to get things started.</h2>
+              <button href="#"><span>Lets get started</span></button>
+              <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            </form>
+        </div>
+    </div>
+    <!-- ----------- -->
+    <!-- <div class="empty-box"></div> -->
+    
+    
+    <footer>
+        <div class="footer-top">
+            <div class="footer-socials">
+                <h3>Our Social</h3>
+                <ul>
+                    <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-linkedin' ></i></a></li>
+                    <li><a href="#"><i class='bx bxl-github' ></i></a></li>
+                    <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                </ul>
+            </div>
+            <div  class="footer-links">
+                <div>
+                    <h3>Find Work</h3>
+                    <ul>
+                        <li><a href="#">Explore Jobs</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Collection</a></li>
+                        <li><a href="#">Brouse</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>One</h3>
+                    <ul>
+                        <li><a href="#">Learn More</a></li>
+                        <li><a href="#">conditions</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>One</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </footer>
+        <div class="footer-bottom">
+            <span>All Rights Reserve@Sarvaya</span>
+        </div>
+    </div>
+    <!-- ----------- -->
+    <script src="../app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        import { showDialog } from 'https://codepen.io/bramus/pen/ZEqMOLz/cccfe67c2b9cdfbeb5fb59083dbd0a64.js';
+        showDialog('https://scroll-driven-animations.style/demos/stacking-cards/css/');
+    </script>
+</body>
+</html>
