@@ -119,7 +119,7 @@
 :root{
 
     /* Colors */
-    --color-primary: #FF4B4B;
+    --color-primary: #fb8500;
     --color-text: #545d7a;
     --color-white: #fff;
     --color-title: #242e4c;
@@ -127,14 +127,9 @@
     --color-border: #dae1f5;
     
     /* Fonts */
-    --font-family: "Satoshi", sans-serif;
     --fs-sm: 1.4rem;
     --fs-md: 1.6rem;
     --fs-lg: 2.2rem;
-    --fw-regular: 400;
-    --fw-medium: 500;
-    --fw-bold: 700;
-    
     /* Transition & Box Shadow */
     --transition: 0.4s ease-in-out; 
     --shadow: 0px 60px 56px -12px rgba(9, 40, 163, 0.05); 
