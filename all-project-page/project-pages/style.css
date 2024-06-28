@@ -214,12 +214,10 @@ a{
     background-size: 100%;
 }
 
-
-
 .project-box-heading{
     display: flex;
     align-items: center;
-    background-color: #AFAFAF;
+    /* background-color: #AFAFAF; */
 }
 .project-container .projects-section .project-box i{
     font-size: 3vw;
@@ -724,6 +722,10 @@ a{
     .project-discover-button .discover-button{
         width: 36vw;
         padding: 8px;
+    }
+    .project-box .project-image img {
+        height: 18vw;
+        margin: 1rem;
     }
     /* ---------------------------------- */ 
     .services-main .services-box{
