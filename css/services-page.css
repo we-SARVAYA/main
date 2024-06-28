@@ -241,7 +241,6 @@
     padding: 1rem;
 }
 
-
 .steps-section{
     display: flex;
     align-items: center;
@@ -394,9 +393,6 @@
     /* .tools-section img {
         height: 4rem;
     } */
-     .tools-section div img{
-        height: 8rem;
-     }
      .tools-sub-container{
         display: flex;
         flex-direction: row;
