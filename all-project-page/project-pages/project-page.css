@@ -128,6 +128,94 @@ body{
 }
 
 
+/* ------------------- */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.6rem 4rem;
+    border-top: 2px solid #00000025;
+    margin-top: 6rem;
+    background-color: #20202009;
+}
+footer h3{
+    font-size: 1.6rem;
+}
+.footer-top{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+}
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    /* margin: 0 2rem; */
+}
+.footer-links div{
+    margin: 1rem 3rem;
+}
+.footer-links ul li a{
+    font-size: 1.4rem;
+    color: #202020;
+    transition: all ease-in-out .1s;
+    font-family: 600;
+}
+.footer-links ul li a:hover{
+    transition: all ease-in-out .1s;
+    color: #20202097;
+}
+
+.footer-socials ul{
+    display: flex;
+    align-items: center;
+    margin-top: .8rem;
+}
+.footer-socials li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.4rem;
+    margin: .4rem;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: #080808;
+    color: #fff;
+    transition: all ease-in-out .1s;
+}
+.footer-socials li a:hover{
+    transition: all ease-in-out .1s;
+
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+.footer-socials h4,.footer-socials h5{
+    margin-left: 10px;
+}
+.footer-socials h5{
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    margin-bottom: -8px;
+}
+.footer-socials h4{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.footer-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.4rem;
+    height: 4rem;
+    background-color: #000;
+}
+
 
 @media (min-width: 768px) {
   .view-project-button a {
