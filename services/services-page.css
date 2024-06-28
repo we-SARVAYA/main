@@ -211,6 +211,31 @@
 
 /* ---------------Technology page--------------- */
 
+.domains-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.domain-heading h3{
+    color: var(--font-color);
+}
+.domains-section .domain-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5rem;
+    padding: 4rem 0;
+}
+.domain-box img{
+    height: 7vw;
+}
+.domain-box h4{
+    font-size: 1.4rem;
+    margin-top: 16px;
+}
+
 .app-heading{
     margin-top: 2rem;
 }
@@ -379,6 +404,22 @@
         font-size: 1.2rem;
         font-weight: 500;
     }
+    /* ------------- */
+    .domains-section .domain-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 3rem;
+        padding: 4rem 0;
+    }
+    .domain-box img{
+        height: 14vw;
+    }
+    .domain-box h4{
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+    
     /* ------------- */
     .tools-section {
         margin-top: 0rem;
