@@ -279,30 +279,37 @@ a{
 
 .project-container .projects-section .project-box{
     display: flex;
-    align-items: start;
+    /* align-items: start; */
     justify-content: space-between;
     flex-direction: column;
     height: 26vw;
-    width: 28%;
+    width: 28vw;
     margin: 1rem;
-    padding: 2rem 2rem;
-    background-color: #ccc;
+    padding: 1rem 1.6rem;
+    background-color: #cccccce2;
     font-size: 1.4vw;
     text-align: center;
     border-radius: 12px 12px 40px 12px;
     background-size: 100%;
 }
-.project-box .project-box-heading {
+.project-box .project-box-head{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
-.project-box .project-image img{
+
+/* .project-box .project-image img{
     height: 18vw;
     margin-top: 1rem;
     border-radius: 10px;
     border-bottom-right-radius: 40px;
+} */
+.project-box .project-image img{
+    margin-top: 1rem;
+    height: 90%;
+    width: 100%;
+    border-radius: 10px;
 }
 .project-box-heading{
     display: flex;
@@ -433,7 +440,6 @@ a{
     width: 90vw;
 }
 /* --- */
-
 .services-main .services-box i{
     font-size: 3vw;
     background-color: #fff;
@@ -526,7 +532,7 @@ a{
     transition: all ease-in-out 1s;
 }
 .blog-box{
-    height: 30vw;
+    height: auto;
     width: 24vw;
     background-color: #D9D9D9;
     margin: 1rem;
@@ -578,6 +584,17 @@ a{
     padding: 1rem;
     margin: 1rem;
     border-radius: 50%;
+}
+.blog-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blog-image img{
+    height: 100%;
+    width: 100%;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
 }
 /* ------------------- */
 .contact-form{
@@ -765,10 +782,10 @@ footer h3{
         height: 42vw;
         width: 34vw;
     }
-    .project-container .projects-section .project-box{
+    /* .project-container .projects-section .project-box{
         height: 36vw;
         width: 34%;
-    }
+    } */
     .logo{
         font-size: 2.4rem;
         font-weight: 600;
@@ -1129,17 +1146,7 @@ footer h3{
     .project-container .project-filter .buttons {
         padding: 2vw 1vw;
         display: flex;
-        align-items: start;
         flex-direction: column-reverse;
-    }
-    /* .project-filter-button{
-        height: 4vh;
-    } */
-    .project-box .project-image img {
-        height: 12rem;
-        width: 20rem;
-        border-radius: 10px;
-        border-bottom-right-radius: 40px;
     }
     .project-filter-button{
         display: flex;
@@ -1154,14 +1161,13 @@ footer h3{
     }
     .project-container .projects-section .project-box {
         display: flex;
-        align-items: start;
         justify-content: space-between;
         height: 80vw;
         width: 90%;
         margin: .4rem;
         padding: .8rem .8rem;
         font-size: 1.4vw;
-        border-radius: 12px 12px 40px 12px;
+        border-radius: 12px 12px 12px 12px;
         background-size: 100%;
     }
     .project-filter .buttons a {
