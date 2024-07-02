@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: url('../images/bg-shade.webp');
 }
 .services-sub-container{
     width: 70%;
@@ -75,7 +76,7 @@
 .about-service h2 a{
     font-weight: 600;
     margin-left: 4px;
-    color: var(--font-color);
+    color: var(--black-color);
 }
 
 
@@ -84,7 +85,7 @@
 }
 .sub-services-container h3{
     font-size: 1.6rem;
-    color: var(--font-color);
+    color: var(--black-color);
 }
 .sub-services-container h1{
     font-size: 4.2rem;

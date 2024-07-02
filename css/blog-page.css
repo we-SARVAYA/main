@@ -79,7 +79,7 @@ body{
     align-items: center;
 }
 .bx-menu{
-    display: none;
+    display: none!important;
 }
 .navbar ul li a{
     color: #fff;

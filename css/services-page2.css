@@ -1,9 +1,15 @@
 :root{
-    --primary-color:#fb8500;
-    --primary-color:#a510e6;
+    --primary-color:#DD6013 ;
     --background-color:#171717;
     --white-color:#fff;
-    --black-color:#000;
+    --black-color:#3D3D3D;
+    --font-famity:"Jaldi", sans-serif;
+}
+.main{
+    background: none;
+    /* background-image: url('../images/bg-shade.webp'); */
+    color: #000;
+    background: transparent;
 }
 body{
     color: var(--white-color);
@@ -12,7 +18,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--background-color);
+    background-image: url('../images/bg-shade.webp');
 }
 .services-sub-container{
     width: 70%;
@@ -72,7 +78,7 @@ body{
 .about-service h2{
     margin-top: 2rem;
     font-weight: 500;
-    color: var(--white-color);
+    color: var(--black-color);
     margin-left: 14px;
     display: flex;
     align-items: center;
@@ -217,7 +223,9 @@ body{
         padding: 5rem 2.4rem;
     }
 }
-
+.contact-us{
+    background-image: url('../images/bg-shade.webp');
+}
 
 /* ---------------Technology page--------------- */
 
@@ -322,9 +330,6 @@ body{
     font-weight: 500;
 }
 
-.contact-us{
-    background-color: var(--background-color);
-}
 .contact-fixed-button button{
    display: none;
 }

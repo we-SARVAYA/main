@@ -1,5 +1,7 @@
 body{
     overflow-x: hidden;
+    background-image: url('../images/bg-shade.webp');
+
 }
 ::-webkit-scrollbar {
     display: none;
