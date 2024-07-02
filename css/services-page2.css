@@ -1,10 +1,18 @@
 :root{
-    --font-color:#fb8500;
+    --primary-color:#fb8500;
+    --primary-color:#a510e6;
+    --background-color:#171717;
+    --white-color:#fff;
+    --black-color:#000;
+}
+body{
+    color: var(--white-color);
 }
 .services-container{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--background-color);
 }
 .services-sub-container{
     width: 70%;
@@ -18,7 +26,7 @@
 }
 
 .services-hero .services-hero-left h3{
-    color: var(--font-color);
+    color: var(--primary-color);
     font-size: 1.8rem;
 }
 .services-hero .services-hero-left h4{
@@ -38,7 +46,7 @@
     margin: 2rem 0;
 }
 .services-hero .services-hero-left p span{
-    color: var(--font-color);
+    color: var(--primary-color);
 }
 .services-hero .services-hero-right img{
     height: 30rem;
@@ -64,7 +72,7 @@
 .about-service h2{
     margin-top: 2rem;
     font-weight: 500;
-    color: #111;
+    color: var(--white-color);
     margin-left: 14px;
     display: flex;
     align-items: center;
@@ -75,7 +83,7 @@
 .about-service h2 a{
     font-weight: 600;
     margin-left: 4px;
-    color: var(--font-color);
+    color: var(--primary-color);
 }
 
 
@@ -84,7 +92,7 @@
 }
 .sub-services-container h3{
     font-size: 1.6rem;
-    color: var(--font-color);
+    color: var(--primary-color);
 }
 .sub-services-container h1{
     font-size: 4.2rem;
@@ -113,7 +121,7 @@
     margin-bottom: 2rem;
 }
 .faq-section span{
-    color: #fb8500;
+    color: var(--white-color);
 }
 
 :root{
@@ -145,7 +153,7 @@
 }
 
 .accordion__wrapper {
-    background-color: var(--color-white);
+    background-color: var(--background-color);
     box-shadow: var(--shadow);
     border-radius: 2.5rem;
     width: 100%;
@@ -156,7 +164,7 @@
 .accordion__title{
     font-size: var(--fs-lg);
     font-weight: var(--fw-bold);
-    color: var(--color-title);
+    color: var(--primary-color);
     margin-bottom: 4rem;
 }
 
@@ -175,7 +183,7 @@
 } 
 
 .accordion__icon {
-    background-color: var(--color-primary);
+    background-color: var(--primary-color);
     width: 2.2rem;
     height: 2.2rem;
     display: flex;
@@ -189,11 +197,13 @@
 .accordion__question{
     font-size: var(--fs-md);
     font-weight: var(--fw-medium);
-    color: var(--color-title);
+    color: var(--white-color);
 }
 
 .accordion__answer{
     padding: 2rem 0;
+    color: #ccc;
+    font-size: 1.1rem;
 }
 
 .accordion__content{
@@ -220,7 +230,7 @@
     margin-top: 4rem;
 }
 .domain-heading h3{
-    color: var(--font-color);
+    color: var(--primary-color);
 }
 .domains-section .domain-container{
     display: grid;
@@ -252,7 +262,7 @@
     font-size: 2.4rem;
 }
 .tools-section h2 span{
-    color: var(--font-color);
+    color: var(--primary-color);
 }
 .tools-section img{
     height: 8vw;
@@ -273,7 +283,7 @@
 }
 .steps-section h2{
     text-align: center;
-    color: var(--font-color);
+    color: var(--primary-color);
     font-size: 1.6rem;
 }
 .steps-section h1{
@@ -312,6 +322,9 @@
     font-weight: 500;
 }
 
+.contact-us{
+    background-color: var(--background-color);
+}
 .contact-fixed-button button{
    display: none;
 }
